@@ -4,24 +4,173 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
+    
     <!-- Bootstrap CSS -->
     <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
     />
-     
+    
     <link href="style.css" rel="stylesheet">
     <title>Site</title>
   </head>
   <body>
+<!-- Navigation -->
+    <!--vazoyme md giati sto md einai to breakpoint poy allazei
+    apo to mobile navigation sto full expanded/ navbar light einai to xrwma bg light 
+    to sticky einai giati theloume sticky navigation-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <!-- fluid pairnei to 100% ths othonhs  -->
+      <div class="container-fluid">
+        <!-- logo location -->
+        <a class="navbar-brand" href="#"> <img src="img/logo.png"></a>
+        <!-- koumpia toggle switch-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarResponsive">
+          <!-- to dropdown icon me tis 3 -->
+          <span class="navbar-toggler-icon"></span> 
+        </button>
+        <!-- klash gia to collapse ftiaksame to id gia to navbarResponsive pou to kaname data-target prin -->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <!-- lista -->
+          <ul class="navbar-nav ml-auto">
+            <!-- to prwto item einai active -->
+            <li class="nav-item active" >
+              <a class="nav-link"  href="#">HOME</a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link"  href="#">About</a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link"  href="#">Contract</a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link"  href="#">Kati allo</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-<h1>Lets begin</h1>
+
+
+
+
+
+
+
+<!--- Image Slider -->
+
+<div id="slides" class="carousel slide" data-ride="carousel">
+<!-- ta koumpakia tou carousel gia na allazeis pices -->
+<ul class="carousel-indicators">
+  <li data-target="#slides" data-slide-to="0" class="active"></li>
+  <li data-target="#slides" data-slide-to="1"></li>
+  <li data-target="#slides" data-slide-to="2"></li>
+</ul>
+<div class="carousel-inner">
+  <div class="carousel-item active">
+    <img src="img/background.png" alt="">
+    <div class="carousel-caption">
+        <h1 class="display-2">SERENATA</h1>
+        <h3>To text katw apo ton titlo</h3>
+        <button type="button" class="btn btn-outline-light btn-lg"> Eimai ena koumpi</button>
+        <button type="button" class="btn btn-danger btn-lg">Kai gw eimai </button>
+      </div>
+  </div>
+  <div class="carousel-item">
+    <img src="img/background2.png" alt="">
+  </div>
+  <div class="carousel-item">
+    <img src="img/background3.png" alt="">
+  </div>
+</div>
+</div>
+
+<!--- Jumbotron -->
+<!-- fluid olh thn othonh -->
+<div  class="container-fluid">
+  <div class="row jumbotron">
+  <div class="col-xs-12 col-sm-12 col-md-9 col lg-9 col-xl-10">
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error veniam id dolorem! Eius ipsa accusantium, excepturi temporibus earum dignissimos maiores quod fugit, animi provident nihil explicabo autem cum unde iure.</p>
+  </div>
+  <div class="col-xs12 col-sm12 col-md-3 col-lg-3 col-xl-2">
+    <a href="#"> <button type="button" class="btn btn-outline-secondary btn-lg">lorem</button></a>
+
+  </div>
+</div>
+</div>
+
+<!--- Welcome Section -->
+<!-- vazoume padding  -->
+<div class="container-fluid padding">
+<div class="row welcome text-center">
+    <div class="col-12">
+      <h1 class="display-4"> KALOSORISATE</h1>
+    </div>
+    <hr>
+    <div class="col-12">
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi atque eum porro ipsum corrupti ab beatae sint ratione facilis aliquid. Obcaecati deserunt nulla eaque illum vel quis id labore quas?</p>
+    </div>
+  </div>
+  </div>
+
+<!--- Three Column Section -->
+<div class="container-fluid padding">
+<div class="row text-center padding">
+  
+  <div class="col-xs-12 col-sm6 col-md-4">
+<!-- vazoume to font awesome icon -->
+<i class="fas fa-code"></i>
+<h3>HTML5</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptas exercitationem aliquid temporibus! Blanditiis accusamus impedit qui quos quasi, vero nam ipsa odit dolorum commodi inventore mollitia ea voluptas nisi?</p>
+  </div>
+</div>
+  <div class="col-xs-12 col-sm6 col-md-4">
+<!-- vazoume to font awesome icon -->
+<i class="fas fa-code"></i>
+<h3>HTML5</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptas exercitationem aliquid temporibus! Blanditiis accusamus impedit qui quos quasi, vero nam ipsa odit dolorum commodi inventore mollitia ea voluptas nisi?</p>
+  </div>
+</div>
+  <div class="col-xs-12 col-sm6 col-md-4">
+<!-- vazoume to font awesome icon -->
+<i class="fas fa-code"></i>
+<h3>HTML5</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptas exercitationem aliquid temporibus! Blanditiis accusamus impedit qui quos quasi, vero nam ipsa odit dolorum commodi inventore mollitia ea voluptas nisi?</p>
+  </div>
+</div>
+
+  <hr class="my-4">
+</div>
+
+<!--- Two Column Section -->
+
+
+<!--- Fixed background -->
+
+
+<!--- Emoji Section -->
+
+  
+<!--- Meet the team -->
+
+
+<!--- Cards -->
+
+
+<!--- Two Column Section -->
+
+
+<!--- Connect -->
+
+
+<!--- Footer -->
 
 
 
@@ -36,20 +185,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- for social media -->
+    <!-- for social media icons-->
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     
